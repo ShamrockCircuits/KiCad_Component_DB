@@ -82,31 +82,6 @@
             "properties": {
                 "description": "Description"
             }
-        },
-		{
-            "name": "Testing",
-            "table": "Testing",
-            "key": "Part ID",
-            "symbols": "Symbols",
-            "footprints": "Footprints",
-            "fields": [
-                {
-                    "column": "MPN",
-                    "name": "MPN",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true
-                },
-                {
-                    "column": "Value",
-                    "name": "Value",
-                    "visible_on_add": true,
-                    "visible_in_chooser": true
-                }
-            ],
-            "properties": {
-                "description": "Description"
-            }
         }
-		
     ]
 }
