@@ -1,0 +1,1 @@
+Common packages used across multiple component families should go here.

@@ -27,27 +27,14 @@
                     "visible_in_chooser": true,
 					"show_name": false
                 },
-                {
-                    "column": "Resistance",
-                    "name": "Resistance",
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
                     "visible_on_add": true,
                     "visible_in_chooser": true,
-					"show_name": false
-                },
-                {
-                    "column": "Resistance Tolerance",
-                    "name": "Tolerance",
-                    "visible_on_add": true,
-                    "visible_in_chooser": true,
-					"show_name": false
-                },
-                {
-                    "column": "Power Rating",
-                    "name": "Power Rating",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-                    "show_name": true
-                }
+                    "show_name": false
+				}
+				
             ],
             "properties": {
                 "description": "Description"
@@ -60,24 +47,203 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
-                {
-                    "column": "Dielectric Type",
-                    "name": "Dielectric",
+				{
+                    "column": "Value",
+                    "name": "Value",
                     "visible_on_add": true,
-                    "visible_in_chooser": false
+                    "visible_in_chooser": true,
+					"show_name": false
                 },
                 {
-                    "column": "Voltage Rating",
+                    "column": "Voltage Rating [V]",
                     "name": "Voltage Rating",
                     "visible_on_add": true,
-                    "visible_in_chooser": true
+                    "visible_in_chooser": true,
+					"show_name": false
                 },
-                {
-                    "column": "Capacitance",
-                    "name": "Capacitance",
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+            ],
+            "properties": {
+                "description": "Description"
+            }
+        },
+        {
+            "name": "Diodes",
+            "table": "Diodes",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+				{
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
                     "visible_on_add": false,
-                    "visible_in_chooser": false
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+            ],
+            "properties": {
+                "description": "Description"
+            }
+        },
+        {
+            "name": "Micros",
+            "table": "Microcontrollers",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+				{
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                },
+				{
+                    "column": "Datasheet",
+                    "name": "Datasheet",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+					"show_name": false
+                },
+				{
+                    "column": "MPN_1",
+                    "name": "MPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+					"show_name": false
                 }
+				
+            ],
+            "properties": {
+                "description": "Description"
+            }
+        },
+        {
+            "name": "Regulators",
+            "table": "Regulators",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+				{
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                },
+				{
+                    "column": "Datasheet",
+                    "name": "Datasheet",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+					"show_name": false
+                },
+				{
+                    "column": "MPN_1",
+                    "name": "MPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+					"show_name": false
+                }
+				
+            ],
+            "properties": {
+                "description": "Description"
+            }
+        },
+        {
+            "name": "Transistors",
+            "table": "Transistors",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+				{
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                },
+				{
+                    "column": "Datasheet",
+                    "name": "Datasheet",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+					"show_name": false
+                },
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+					"show_name": false
+                },
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+					"show_name": false
+                }
+				
+            ],
+            "properties": {
+                "description": "Description"
+            }
+        },
+        {
+            "name": "Switches",
+            "table": "Switches",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+				{
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                },
+				{
+                    "column": "MPN_1",
+                    "name": "MPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+					"show_name": false
+                },
+				{
+                    "column": "Type",
+                    "name": "Type",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+					"show_name": false
+                },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Dimension",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+					"show_name": false
+                }
+				
             ],
             "properties": {
                 "description": "Description"

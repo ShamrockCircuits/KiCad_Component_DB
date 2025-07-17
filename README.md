@@ -1,5 +1,14 @@
 # KiCad_Component_DB
 ---
+# KiCad File Types
+I often forget what file extensions are related to which data type. Here's an overview of the file extensions we will encouter while working in with KiCad components.
+
+> `<file_name>.pretty` - Directory, contains footprint data.
+
+> `<file_name>.kicad_mod` - Footprint data.
+
+> `<file_name>.kicad_sym` - Symbol Data.
+---
 # Naming Conventions
 - Generally followed this [Part Numbering Template](https://github.com/git-plm/parts/blob/main/partnumbers.md)
 - **Passive** provide a special use case for the `CCC-NNN-VVVV` scheme
@@ -31,3 +40,22 @@ Example of the encoding scheme.
 - 220nF 0805 X5R: **CAP-001-2241**
 
 If you are unable to encode the capacitor value in the 3-digits assign `VVVV` as `000V`. Where the last `V` still signifies the dielectric.
+
+## Symbols & Footprints
+Since the same symbol/footprint might be reused by several IPNs, the symbol/footprint **name should not contain any IPN data**. Instead we will use generic sequential numbering. For example the first diode symbol will be `SYM-DIO-0000`, the next would be **SYM-DIO-0001**. Details about the symbol can be stored in the meta data of the symbol.
+
+Similarly footprint names will be generated sequentially, starting with `FTP-DIO-0000`.
+
+There is no link between `SYM-<CAT>-1234` and `FTP-<CAT>-1234`.
+For example `SYM-<CAT>-1234` could use `FTP-<CAT>-0200`.
+
+
+**Why no footprint or symbol variants?**
+The database provides atomic parts. Each IPN has to be assigned only a single symbol and a single footprint. If we start adding symbol and footprint variants, then I would need to create a unique IPN for every possible combination.
+
+### Creating New Footprints
+Silkscreen Text -> W/H/T -> 0.6/0.6/0.1mm
+
+Fabrication reference designator should be placed center on the component. Make it whatever text size is reasonable to fit within the part. Max out at the same width, height and thickness as the silkscreen.
+
+Pin one indicator. Use them. Include pin 1 indicator on fabrication layer.
