@@ -240,7 +240,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic Symbol"
+		(property "Description" "Solar Energy Harvester"
 			(at 6.35 26.67 0)
 			(effects
 				(font
