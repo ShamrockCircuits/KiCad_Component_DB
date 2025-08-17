@@ -1,0 +1,135 @@
+(footprint "FTP-CON-0000"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Through Hole Mount Test Points - Keystone 500x")
+	(tags "Through Hole Mount Test Points")
+	(property "Reference" "REF**"
+		(at 0 -2.2 0)
+		(layer "F.SilkS")
+		(uuid "f3c12b97-5b45-45fd-bef9-505adeda8c90")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "VAL"
+		(at 0 -2.8 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4813d897-5fd1-416a-ba29-8fab119a2662")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "04c04507-dd17-4ed9-902f-19b753ed8bc6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Test Point - Keystone 500x"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "ed5cde81-d63e-4326-bafd-9f3ffbdb47c4")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_circle
+		(center 0 0)
+		(end 1.3 0)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "37442380-0ccf-4cbb-af5b-f414222b76d4")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 1.6 0)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.CrtYd")
+		(uuid "33420d11-7d91-47a4-bc6e-e0db84820589")
+	)
+	(fp_rect
+		(start -0.75 -0.25)
+		(end 0.75 0.25)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "86f1edd2-461f-42df-9acf-f7e0a5dfc934")
+	)
+	(fp_circle
+		(center 0 0)
+		(end 1.25 0)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "dd962169-4778-4239-b7ef-f12bbeac5bc4")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "7c1b07d9-8874-4172-b668-b27c7d3af872")
+		(effects
+			(font
+				(size 0.26 0.26)
+				(thickness 0.06)
+				(bold yes)
+			)
+		)
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.8 1.8)
+		(drill 1)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "2eea8f1e-26a0-45ff-b675-89cc314d7f6a")
+	)
+	(embedded_fonts no)
+	(model "${KICAD_USER_CUSTOM_LIB}/0-CON/0-CON.step/Keystone_5001.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 0.6 0.6 0.6)
+		)
+		(rotate
+			(xyz -90 -0 180)
+		)
+	)
+)

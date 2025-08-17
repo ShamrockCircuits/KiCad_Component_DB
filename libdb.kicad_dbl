@@ -14,19 +14,19 @@
     },
     "libraries": [
         {
-            "name": "Resistors",
-            "table": "Resistors",
+            "name": "Analog",
+            "table": "Analog",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
-			    {
+				{
                     "column": "Value",
                     "name": "Value",
                     "visible_on_add": true,
                     "visible_in_chooser": true,
 					"show_name": false
-                },
+                    },
 				{
                     "column": "Case/Package Size",
                     "name": "Package",
@@ -69,15 +69,14 @@
                     "visible_in_chooser": true,
                     "show_name": false
 				}
-				
             ],
             "properties": {
                 "description": "Description"
             }
         },
         {
-            "name": "Capacitors",
-            "table": "Capacitors",
+            "name": "Capacitor",
+            "table": "Capacitor",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
@@ -144,8 +143,76 @@
             }
         },
         {
-            "name": "Diodes",
-            "table": "Diodes",
+            "name": "Connector",
+            "table": "Connector",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+				{
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                },
+                {
+                    "column": "Voltage Rating [V]",
+                    "name": "Voltage Rating",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+            ],
+            "properties": {
+                "description": "Description"
+            }
+        },
+        {
+            "name": "Diode",
+            "table": "Diode",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
@@ -205,8 +272,8 @@
             }
         },
         {
-            "name": "Micros",
-            "table": "Microcontrollers",
+            "name": "Fabrication",
+            "table": "Fabrication",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
@@ -215,216 +282,758 @@
                     "column": "Value",
                     "name": "Value",
                     "visible_on_add": true,
-                    "visible_in_chooser": true,
-					"show_name": false
-                },
-				{
-                    "column": "Datasheet",
-                    "name": "Datasheet",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-					"show_name": false
-                },
-				{
-                    "column": "MFN_1",
-                    "name": "MFN_1",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-                    "show_name": false
-				},
-				{
-                    "column": "MPN_1",
-                    "name": "MPN_1",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-                    "show_name": false
-				},
-				{
-                    "column": "MFN_2",
-                    "name": "MFN_2",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-                    "show_name": false
-				},
-				{
-                    "column": "MPN_2",
-                    "name": "MPN_2",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-                    "show_name": false
-				},
-				{
-                    "column": "Comment",
-                    "name": "Comment",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-                    "show_name": false
-				}
-				
-            ],
-            "properties": {
-                "description": "Description"
-            }
-        },
-        {
-            "name": "Regulators",
-            "table": "Regulators",
-            "key": "IPN",
-            "symbols": "Symbols",
-            "footprints": "Footprints",
-            "fields": [
-				{
-                    "column": "Value",
-                    "name": "Value",
-                    "visible_on_add": true,
-                    "visible_in_chooser": true,
-					"show_name": false
-                },
-				{
-                    "column": "Datasheet",
-                    "name": "Datasheet",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-					"show_name": false
-                },
-				{
-                    "column": "MFN_1",
-                    "name": "MFN_1",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-                    "show_name": false
-				},
-				{
-                    "column": "MPN_1",
-                    "name": "MPN_1",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-                    "show_name": false
-				},
-				{
-                    "column": "MFN_2",
-                    "name": "MFN_2",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-                    "show_name": false
-				},
-				{
-                    "column": "MPN_2",
-                    "name": "MPN_2",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-                    "show_name": false
-				},
-				{
-                    "column": "Comment",
-                    "name": "Comment",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-                    "show_name": false
-				}
-				
-            ],
-            "properties": {
-                "description": "Description"
-            }
-        },
-        {
-            "name": "Transistors",
-            "table": "Transistors",
-            "key": "IPN",
-            "symbols": "Symbols",
-            "footprints": "Footprints",
-            "fields": [
-				{
-                    "column": "Value",
-                    "name": "Value",
-                    "visible_on_add": true,
-                    "visible_in_chooser": true,
-					"show_name": false
-                },
-				{
-                    "column": "Datasheet",
-                    "name": "Datasheet",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-					"show_name": false
-                },
-				{
-                    "column": "MFN_1",
-                    "name": "MFN_1",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-                    "show_name": false
-				},
-				{
-                    "column": "MPN_1",
-                    "name": "MPN_1",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-                    "show_name": false
-				},
-				{
-                    "column": "MFN_2",
-                    "name": "MFN_2",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-                    "show_name": false
-				},
-				{
-                    "column": "MPN_2",
-                    "name": "MPN_2",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-                    "show_name": false
-				},
-				{
-                    "column": "Comment",
-                    "name": "Comment",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-                    "show_name": false
-				}
-				
-            ],
-            "properties": {
-                "description": "Description"
-            }
-        },
-        {
-            "name": "Switches",
-            "table": "Switches",
-            "key": "IPN",
-            "symbols": "Symbols",
-            "footprints": "Footprints",
-            "fields": [
-				{
-                    "column": "Value",
-                    "name": "Value",
-                    "visible_on_add": true,
-                    "visible_in_chooser": true,
-					"show_name": false
-                },
-				{
-                    "column": "MPN_1",
-                    "name": "MPN_1",
-                    "visible_on_add": false,
-                    "visible_in_chooser": true,
-					"show_name": false
-                },
-				{
-                    "column": "Type",
-                    "name": "Type",
-                    "visible_on_add": false,
                     "visible_in_chooser": true,
 					"show_name": false
                 },
 				{
                     "column": "Case/Package Size",
-                    "name": "Dimension",
+                    "name": "Package",
                     "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+            ],
+            "properties": {
+                "description": "Description"
+            }
+        },
+        {
+            "name": "IntegratedCircuit",
+            "table": "IntegratedCircuit",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+				{
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
                     "visible_in_chooser": true,
 					"show_name": false
                 },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+            ],
+            "properties": {
+                "description": "Description"
+            }
+        },
+        {
+            "name": "Magnetics",
+            "table": "Magnetics",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Marking",
+            "table": "Marking",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Mechanical",
+            "table": "Mechanical",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Microcontroller",
+            "table": "Microcontroller",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Optoelectronics",
+            "table": "Optoelectronics",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Oscillator",
+            "table": "Oscillator",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Protection",
+            "table": "Protection",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Radio",
+            "table": "Radio",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Regulator",
+            "table": "Regulator",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Relay",
+            "table": "Relay",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Resistor",
+            "table": "Resistor",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
 				{
                     "column": "MFN_1",
                     "name": "MFN_1",
@@ -465,6 +1074,192 @@
             "properties": {
                 "description": "Description"
             }
+        },
+        {
+            "name": "EnvSensor",
+            "table": "Sensor",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "SystemOnChip",
+            "table": "SystemOnChip",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Transistor",
+            "table": "Transistor",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
         }
     ]
 }

@@ -1,0 +1,177 @@
+(footprint "FTP-IND-0001"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Inductor 3.0mmx3.0mm non-standard")
+	(tags "SMD, Inductor, 4x4")
+	(property "Reference" "REF**"
+		(at 0 -2.7 0)
+		(layer "F.SilkS")
+		(uuid "4821ce46-b71e-439f-beef-0150d7d891f6")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "FTP-IND-0001"
+		(at 0 3.5 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "87d60fc0-46a2-4b16-b864-aff86dc5491a")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "2aa3256a-5532-43fb-8d25-462503a34817")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "Footprint Based on IND-001-4704 AML."
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "4f799ee9-5301-42f1-a5d9-0b5a7604ec0f")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_line
+		(start -1.6 1.65)
+		(end 1.6 1.65)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e9057657-a633-4cec-9bdc-ac1a8a42c698")
+	)
+	(fp_line
+		(start -1.1 -1.65)
+		(end 1.6 -1.65)
+		(stroke
+			(width 0.12)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "efa7ed1e-24dc-4756-8f77-dd12c5c8f556")
+	)
+	(fp_circle
+		(center -1.4 -1.8)
+		(end -1.4 -1.8)
+		(stroke
+			(width 0.3)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "6eb29357-8d12-4876-8c4b-914b5ff4cf6a")
+	)
+	(fp_line
+		(start -1.8 -1.8)
+		(end -1.8 1.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "cd6903fe-33c8-4266-a8f4-6082948e1419")
+	)
+	(fp_line
+		(start -1.8 1.8)
+		(end 1.8 1.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "f0a036f7-2dc0-4473-b87e-017b99ac36c8")
+	)
+	(fp_line
+		(start 1.8 -1.8)
+		(end -1.8 -1.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "7fc524c3-e590-4162-baf0-2fbb8687dba3")
+	)
+	(fp_line
+		(start 1.8 1.8)
+		(end 1.8 -1.8)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "aa4c5315-fa21-4160-9b1d-8f8cd52e7ab4")
+	)
+	(fp_rect
+		(start -1.5 -1.5)
+		(end 1.5 1.5)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "451ef9ae-c5e7-4c11-8169-0ad7f403d4cd")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "7e15a3c1-c88e-49ba-ac47-a6aa39f91706")
+		(effects
+			(font
+				(size 0.45 0.45)
+				(thickness 0.08)
+				(bold yes)
+			)
+		)
+	)
+	(pad "1" smd rect
+		(at -1.1 0)
+		(size 1 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "698011da-3a0c-4eee-9920-104abf2623ab")
+	)
+	(pad "2" smd rect
+		(at 1.1 0)
+		(size 1 3)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(uuid "710fa6fe-7ff2-485b-993d-aecff7c56249")
+	)
+	(embedded_fonts no)
+	(model "${KICAD9_3DMODEL_DIR}/Inductor_SMD_Wurth.3dshapes/L_Wurth_WE-LQSH-4020.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
