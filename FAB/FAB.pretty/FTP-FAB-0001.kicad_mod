@@ -1,0 +1,119 @@
+(footprint "FTP-FAB-0001"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "Oscilloscope Probe Test Point, 5mm")
+	(tags "solder jumper open")
+	(property "Reference" "REF**"
+		(at 2.5 0 0)
+		(layer "F.SilkS" knockout)
+		(uuid "2d856dc9-d208-4833-9630-aba95b597ba1")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.1)
+				(bold yes)
+			)
+		)
+	)
+	(property "Value" "VAL"
+		(at 2.5 -2 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "656a70db-01ef-42a7-91d8-cc57681f457d")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "e0e7dfd6-8cc1-4c55-bda5-695978b3c026")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "de824fa2-69ad-4520-91b5-f846e8ea5eeb")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(zone_connect 1)
+	(attr exclude_from_pos_files exclude_from_bom allow_soldermask_bridges)
+	(fp_line
+		(start 0 -1.118034)
+		(end 5 -0.707107)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "90e727ec-4fa2-4189-bf3d-f3cfe9c87563")
+	)
+	(fp_line
+		(start 0 1.118034)
+		(end 5 0.707107)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "d4674d98-95f0-4f83-a03a-d3a832bb44eb")
+	)
+	(fp_arc
+		(start 0 1.118034)
+		(mid -1.118034 0)
+		(end 0 -1.118034)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "f9781a7f-46d2-4a00-89ba-88b1aca41d49")
+	)
+	(fp_arc
+		(start 5 -0.707107)
+		(mid 5.707107 0)
+		(end 5 0.707107)
+		(stroke
+			(width 0.05)
+			(type default)
+		)
+		(layer "F.CrtYd")
+		(uuid "23d1366d-4693-4c53-8593-fd3dd8cd76bf")
+	)
+	(pad "1" thru_hole circle
+		(at 0 0)
+		(size 1.8 1.8)
+		(drill 0.9)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "1d03a477-549f-4f0f-b5ff-a78f996a76e6")
+	)
+	(pad "2" thru_hole circle
+		(at 5 0)
+		(size 1 1)
+		(drill 0.5)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "da2f0d65-edb8-4d1f-b0fd-20281fecf2c3")
+	)
+	(embedded_fonts no)
+)

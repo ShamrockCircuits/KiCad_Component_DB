@@ -1260,6 +1260,68 @@
             "properties": {
                 "description": "Description"
                }
+        },
+        {
+            "name": "Switch",
+            "table": "Switch",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
         }
     ]
 }

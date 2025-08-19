@@ -192,12 +192,6 @@
 		(embedded_fonts no)
 	)
 	(symbol "SYM-FAB-0001"
-		(pin_numbers
-			(hide yes)
-		)
-		(pin_names
-			(hide yes)
-		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -306,7 +300,7 @@
 			(pin passive line
 				(at 0 0 0)
 				(length 2.54)
-				(name "SIG"
+				(name ""
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -324,7 +318,7 @@
 			(pin passive line
 				(at 5.08 -5.08 90)
 				(length 2.54)
-				(name "GND"
+				(name ""
 					(effects
 						(font
 							(size 1.27 1.27)

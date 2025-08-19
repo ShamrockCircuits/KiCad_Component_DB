@@ -36,6 +36,7 @@ There are many components that could fit into multiple libraries. To avoid confu
 | Solid State Relay | RLY           | OPT                           |
 | Test Points       | FAB           | CON, MEC, MRK                 |
 | Fabrication Markings | FAB        | MRK                           |
+| Solder Bridge     | FAB           | CON, MEC                      |
 
 
 **Database Tales**<br>
