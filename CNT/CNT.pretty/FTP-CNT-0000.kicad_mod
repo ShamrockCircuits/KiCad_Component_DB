@@ -1,22 +1,23 @@
-(footprint "PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal"
+(footprint "FTP-CNT-0000"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
-	(descr "Generic Phoenix Contact connector footprint for: MSTBA_2,5/2-G-5,08; number of pins: 02; pin pitch: 5.08mm; Angled || order number: 1757242 12A || order number: 1923869 16A (HC)")
-	(tags "phoenix_contact connector MSTBA_01x02_G_5.08mm")
+	(descr "Generic Connector, 2 Pin, Pitch 5.08mm, Right Angle")
+	(tags "Generic Connector, 2 Pin, Pitch 5.08mm, Right Angle")
 	(property "Reference" "REF**"
-		(at 2.54 -3.2 0)
+		(at 3 -3 0)
 		(layer "F.SilkS")
 		(uuid "246b219a-1f30-4c2f-85a2-94d07b6ea7c4")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.6 0.6)
+				(thickness 0.1)
+				(bold yes)
 			)
 		)
 	)
-	(property "Value" "PhoenixContact_MSTBA_2,5_2-G-5,08_1x02_P5.08mm_Horizontal"
+	(property "Value" "VAL"
 		(at 2.54 11.2 0)
 		(layer "F.Fab")
 		(uuid "5a02573c-b093-46e0-a632-82e5437c0d24")
@@ -111,36 +112,6 @@
 		)
 		(layer "F.SilkS")
 		(uuid "6fa0e884-87d1-48b7-88b0-a4fae2d145c2")
-	)
-	(fp_line
-		(start -0.3 -2.91)
-		(end 0.3 -2.91)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "86888ed1-d694-480e-a29d-cba7a839ce1b")
-	)
-	(fp_line
-		(start 0 -2.31)
-		(end -0.3 -2.91)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "c42357d5-72f1-4068-be7f-edf71ab9af26")
-	)
-	(fp_line
-		(start 0.3 -2.91)
-		(end 0 -2.31)
-		(stroke
-			(width 0.12)
-			(type solid)
-		)
-		(layer "F.SilkS")
-		(uuid "9bc8a088-c88c-483f-8a28-5bc73b7d4346")
 	)
 	(fp_line
 		(start 0.75 8.61)
@@ -342,8 +313,21 @@
 		(layer "F.Fab")
 		(uuid "759ccd84-6a7f-4f96-a8cd-2e4e7b753f5e")
 	)
+	(fp_text user "1"
+		(at -3.5 -2.5 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "93780c2a-dcac-4b7f-8de1-174779e047d6")
+		(effects
+			(font
+				(size 0.75 0.75)
+				(thickness 0.12)
+			)
+			(justify bottom)
+		)
+	)
 	(fp_text user "${REFERENCE}"
-		(at 2.54 -1.3 0)
+		(at 2.545 4 0)
 		(layer "F.Fab")
 		(uuid "b50dcbc6-2082-4819-a8f5-2095c3a6480d")
 		(effects
