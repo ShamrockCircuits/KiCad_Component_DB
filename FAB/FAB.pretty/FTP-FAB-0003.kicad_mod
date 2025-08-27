@@ -1,4 +1,4 @@
-(footprint "FTP-CON-0000"
+(footprint "FTP-FAB-0003"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
@@ -121,7 +121,7 @@
 		(uuid "2eea8f1e-26a0-45ff-b675-89cc314d7f6a")
 	)
 	(embedded_fonts no)
-	(model "${KICAD_USER_CUSTOM_LIB}/0-CON/0-CON.step/Keystone_5001.STEP"
+	(model "${KICAD_USER_CUSTOM_LIB}/FAB/FAB.step/Keystone_5001.STEP"
 		(offset
 			(xyz 0 0 0)
 		)
