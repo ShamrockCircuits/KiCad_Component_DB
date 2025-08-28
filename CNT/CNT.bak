@@ -2,7 +2,7 @@
 	(version 20241209)
 	(generator "kicad_symbol_editor")
 	(generator_version "9.0")
-	(symbol "SYM-CON-0000"
+	(symbol "SYM-CNT-0000"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -62,7 +62,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "SYM-CON-0000_0_1"
+		(symbol "SYM-CNT-0000_0_1"
 			(circle
 				(center 0 -2.54)
 				(radius 0.635)
@@ -86,7 +86,7 @@
 				)
 			)
 		)
-		(symbol "SYM-CON-0000_1_1"
+		(symbol "SYM-CNT-0000_1_1"
 			(rectangle
 				(start -1.27 -1.27)
 				(end 1.27 -6.35)
@@ -137,7 +137,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "SYM-CON-0001"
+	(symbol "SYM-CNT-0001"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -195,7 +195,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "SYM-CON-0001_0_1"
+		(symbol "SYM-CNT-0001_0_1"
 			(circle
 				(center 0 -2.54)
 				(radius 0.635)
@@ -219,7 +219,7 @@
 				)
 			)
 		)
-		(symbol "SYM-CON-0001_1_1"
+		(symbol "SYM-CNT-0001_1_1"
 			(rectangle
 				(start -1.27 -1.27)
 				(end 1.27 -6.35)
@@ -270,7 +270,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "SYM-CON-0002"
+	(symbol "SYM-CNT-0002"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -319,7 +319,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "SYM-CON-0002_0_1"
+		(symbol "SYM-CNT-0002_0_1"
 			(circle
 				(center 0 -1.27)
 				(radius 0.635)
@@ -354,7 +354,7 @@
 				)
 			)
 		)
-		(symbol "SYM-CON-0002_1_1"
+		(symbol "SYM-CNT-0002_1_1"
 			(rectangle
 				(start -1.27 0)
 				(end 1.27 -7.62)
@@ -423,7 +423,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "SYM-CON-0003"
+	(symbol "SYM-CNT-0003"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -472,7 +472,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "SYM-CON-0003_0_1"
+		(symbol "SYM-CNT-0003_0_1"
 			(circle
 				(center 0 -1.27)
 				(radius 0.635)
@@ -529,7 +529,7 @@
 				)
 			)
 		)
-		(symbol "SYM-CON-0003_1_1"
+		(symbol "SYM-CNT-0003_1_1"
 			(rectangle
 				(start -1.27 0)
 				(end 1.27 -12.7)
@@ -634,7 +634,7 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "SYM-CON-0004"
+	(symbol "SYM-CNT-0004"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -683,7 +683,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "SYM-CON-0004_0_1"
+		(symbol "SYM-CNT-0004_0_1"
 			(circle
 				(center 0 -1.27)
 				(radius 0.635)
@@ -773,7 +773,7 @@
 				)
 			)
 		)
-		(symbol "SYM-CON-0004_1_1"
+		(symbol "SYM-CNT-0004_1_1"
 			(rectangle
 				(start -1.27 0)
 				(end 1.27 -20.32)
@@ -932,12 +932,16 @@
 		)
 		(embedded_fonts no)
 	)
-	(symbol "SYM-CON-0005"
+	(symbol "SYM-CNT-0005"
+		(pin_names
+			(offset 1.016)
+			(hide yes)
+		)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(property "Reference" "TP"
-			(at -1.27 1.905 0)
+		(property "Reference" "J"
+			(at 0 2.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -945,13 +949,11 @@
 			)
 		)
 		(property "Value" "VAL"
-			(at 4.445 3.175 0)
+			(at 0 -5.08 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
@@ -963,7 +965,25 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "~"
+			(at 0 5.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "1x2 Connector Socket Female"
+			(at 0 7.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ki_keywords" "1x2 Connector Socket Female"
 			(at 0 0 0)
 			(effects
 				(font
@@ -972,17 +992,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Test Point - SMD"
-			(at 4.445 5.715 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Test Point - SMD"
+		(property "ki_fp_filters" "Connector*:*_1x??_*"
 			(at 0 0 0)
 			(effects
 				(font
@@ -991,126 +1001,84 @@
 				(hide yes)
 			)
 		)
-		(symbol "SYM-CON-0005_0_1"
+		(symbol "SYM-CNT-0005_1_1"
+			(arc
+				(start -5.08 0.508)
+				(mid -4.5742 0)
+				(end -5.08 -0.508)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(arc
+				(start -5.08 -2.032)
+				(mid -4.5742 -2.54)
+				(end -5.08 -3.048)
+				(stroke
+					(width 0.1524)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
 			(polyline
 				(pts
-					(xy -2.54 0) (xy -3.175 0.635) (xy -3.81 0) (xy -3.175 -0.635) (xy -2.54 0)
+					(xy -3.81 0) (xy -4.572 0)
 				)
 				(stroke
-					(width 0)
+					(width 0.1524)
 					(type default)
 				)
 				(fill
 					(type none)
 				)
 			)
-		)
-		(symbol "SYM-CON-0005_1_1"
-			(pin passive line
-				(at 0 0 180)
-				(length 2.54)
-				(name ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
+			(polyline
+				(pts
+					(xy -3.81 -2.54) (xy -4.572 -2.54)
 				)
-				(number ""
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-		)
-		(embedded_fonts no)
-	)
-	(symbol "SYM-CON-0006"
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(property "Reference" "TP"
-			(at -1.27 1.905 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VAL"
-			(at 4.445 3.175 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Test Point - THT"
-			(at 4.445 5.715 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "ki_keywords" "Test Point - THT"
-			(at 0 0 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(symbol "SYM-CON-0006_0_1"
-			(circle
-				(center -3.1191 0.0258)
-				(radius 0.568)
 				(stroke
-					(width 0)
+					(width 0.1524)
 					(type default)
 				)
 				(fill
 					(type none)
 				)
 			)
-		)
-		(symbol "SYM-CON-0006_1_1"
 			(pin passive line
 				(at 0 0 180)
-				(length 2.54)
-				(name ""
+				(length 3.81)
+				(name "Pin_1"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number ""
+				(number "1"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin passive line
+				(at 0 -2.54 180)
+				(length 3.81)
+				(name "Pin_2"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
