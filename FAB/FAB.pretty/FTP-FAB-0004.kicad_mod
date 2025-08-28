@@ -1,0 +1,71 @@
+(footprint "FTP-FAB-0004"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "JLC Production Marking \"JLCJLCJLC\"")
+	(tags "JLC Production Marking \"JLCJLCJLC\"")
+	(property "Reference" "REF**"
+		(at 0 -1 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "318f01f6-aaea-4425-b727-dd7ca0563648")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "VAL"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "42ace9c9-ddb0-4157-8538-1a79932ad01e")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1c626414-fd97-4c98-b499-19cb3c0aa6a6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bf639518-e0de-44cb-b0e5-7814e2f7cd3e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(fp_text user "JLCJLCJLCJLC"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(uuid "d7bd619b-19a5-4e05-ba4c-0c36d2402f76")
+		(effects
+			(font
+				(size 0.81 0.81)
+				(thickness 0.15)
+			)
+		)
+	)
+	(embedded_fonts no)
+)
