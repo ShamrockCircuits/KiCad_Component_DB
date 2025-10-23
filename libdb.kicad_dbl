@@ -20,6 +20,13 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
 				{
                     "column": "Value",
                     "name": "Value",
@@ -81,6 +88,13 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
 				{
                     "column": "Value",
                     "name": "Value",
@@ -149,6 +163,13 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
 				{
                     "column": "Value",
                     "name": "Value",
@@ -203,6 +224,13 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
 				{
                     "column": "Value",
                     "name": "Value",
@@ -264,6 +292,13 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
 				{
                     "column": "Value",
                     "name": "Value",
@@ -325,6 +360,13 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
 				{
                     "column": "Value",
                     "name": "Value",
@@ -386,6 +428,13 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
 			    {
                     "column": "Value",
                     "name": "Value",
@@ -448,6 +497,13 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
 			    {
                     "column": "Value",
                     "name": "Value",
@@ -482,6 +538,13 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
 			    {
                     "column": "Value",
                     "name": "Value",
@@ -544,6 +607,13 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
 			    {
                     "column": "Value",
                     "name": "Value",
@@ -606,6 +676,13 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
 			    {
                     "column": "Value",
                     "name": "Value",
@@ -668,6 +745,13 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
 			    {
                     "column": "Value",
                     "name": "Value",
@@ -730,6 +814,13 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
 			    {
                     "column": "Value",
                     "name": "Value",
@@ -792,6 +883,13 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
 			    {
                     "column": "Value",
                     "name": "Value",
@@ -854,6 +952,13 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
 			    {
                     "column": "Value",
                     "name": "Value",
@@ -916,6 +1021,13 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
 			    {
                     "column": "Value",
                     "name": "Value",
@@ -978,6 +1090,13 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
 			    {
                     "column": "Value",
                     "name": "Value",
@@ -1040,6 +1159,13 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
 			    {
                     "column": "Value",
                     "name": "Value",
@@ -1102,6 +1228,13 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
 			    {
                     "column": "Value",
                     "name": "Value",
@@ -1164,6 +1297,13 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
 			    {
                     "column": "Value",
                     "name": "Value",
@@ -1226,6 +1366,13 @@
             "symbols": "Symbols",
             "footprints": "Footprints",
             "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
 			    {
                     "column": "Value",
                     "name": "Value",
