@@ -1,4 +1,4 @@
-PWR - Power Component Library
+RLY - Relay Component Library
 
 Please check that your device is listed below before adding it to this library.
 Check that the component type does not already exist in a different library before adding below.
