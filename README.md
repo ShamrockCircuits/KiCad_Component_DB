@@ -69,7 +69,7 @@ Below is a list of all the libraries stored in this repo, along with a short des
 | TRN  | Transistor                 | BJT, FET, IGBT                           |
 
 
-## Resistors
+## Resistors / RES
 4-digit encoding. For example 1234 is 1.23*10^4 (12.3kΩ). If you are unable to encode the exact value it is still recommended that you encode the closest possible value.
 
 - 1K   0805 1%: **RES-002-1003**
@@ -80,7 +80,7 @@ Below is a list of all the libraries stored in this repo, along with a short des
 
 There has been no agreement yet how to encode values below 0.01Ω. I will either (1) **ignore the version digits**, or (2) change the encoding scheme for mΩ resistors. Likely I will follow option (1).
 
-## Capacitors
+## Capacitors / CAP
 Value uses 3-digit encoding. Where the **third digit** is the number of **zeros in pF**. For example, 103 is 10nF. The remaining digit is used to encode the dielectric type. Common combinations (that I typically use) have been encoded roughly  in accordance with their popularity.  
  - 0 - None
  - 1 - X5R
@@ -96,7 +96,7 @@ Example of the encoding scheme.
 
 If you are unable to encode the capacitor value in the 3-digits assign `VVVV` as `000V`. Where the last `V` still signifies the dielectric. *NOTE - I haven't had to do this yet, it might change when I encounter my first issue*
 
-## Inductors
+## Inductors / IND
 The lowest value I intend to capture is about 1nH. So I'll make `1000` equal to 1nH. This gives me the range from 0.01nH to 9.99H (jeez that's big).
 
 Example of the encoding scheme. Note the the `NNN` digits will increment on ANY spec change other than inductance.
@@ -104,6 +104,17 @@ Example of the encoding scheme. Note the the `NNN` digits will increment on ANY 
 - 100nH 3.00x3.00 2A: **IND-000-1002**
 - 120uH 3.00x3.00 2A: **IND-000-1205**
 - 100nH 2.90x2.90 4A: **IND-001-1002**
+
+## Connectors / CNT
+Last four digits will be encoded as follows. The **first digit** signifies the pin gender.
+- 0 - Female
+- 1 - Male
+- 2 - Genderless
+- 3 - Hermaphrodite
+- 4 - PCB Footprint 
+ <br>*from a layout perspective the connector is just a footprint w/o a part, some programming headers for example*
+- 5... 9 - Others
+
 
 ## Symbols & Footprints
 Since the same symbol/footprint might be reused by several IPNs, the symbol/footprint **name should not contain any IPN data**. Instead we will use **generic sequential numbering**. For example the first diode symbol will be `SYM-DIO-0000`, the next would be **SYM-DIO-0001**. Details about the symbol can be stored in the meta data of the symbol.
