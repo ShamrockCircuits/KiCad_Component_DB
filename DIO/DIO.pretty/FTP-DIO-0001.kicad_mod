@@ -135,6 +135,16 @@
 		(uuid "5e6c89bc-0077-43cb-a060-8d030f52582e")
 	)
 	(fp_line
+		(start -0.750683 -0.625)
+		(end -0.750683 0.625)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(layer "F.Fab")
+		(uuid "cbd0d1c8-f33e-4a02-981e-983bc5c8d3e9")
+	)
+	(fp_line
 		(start 1 -0.625)
 		(end 1 0.625)
 		(stroke
@@ -168,24 +178,13 @@
 		)
 	)
 	(fp_text user "${REFERENCE}"
-		(at 0 0 0)
+		(at 0.146236 0 0)
 		(layer "F.Fab")
 		(uuid "3b3291b2-bd5b-4783-906a-f2c9540487be")
 		(effects
 			(font
 				(size 0.5 0.5)
 				(thickness 0.08)
-			)
-		)
-	)
-	(fp_text user "K"
-		(at -1.45 -0.725 0)
-		(layer "F.Fab")
-		(uuid "70193dce-b2f0-4485-81ab-c22890b04cb4")
-		(effects
-			(font
-				(size 0.4 0.4)
-				(thickness 0.06)
 			)
 		)
 	)
