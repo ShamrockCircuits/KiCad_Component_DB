@@ -15,9 +15,10 @@ I often forget what file extensions are related to which data type. Here's an ov
 The part codes used for this project are very similar, though slightly modified from this [part numbering template](https://github.com/git-plm/parts/blob/main/partnumbers.md) Key changes are as follows..
 
 **New Part Types**
-* **MRK** - Added a "markings" library for graphics and logos. These are generally "symbols" that won't appear on the BOM.
-* **FAB** - Fabrication specific objects. Such as fiducials, tooling holes, and mouse bites. There are a few markings which are specifically used by fabrication. For example JLCJLCJLC. These belong in the FAB library.
-* **MEC** - Things I consider mechanical. Primarily mounting holes, heat sinks, and standoffs. 
+* **MRK** - Added a "markings" library for graphics and logos. `Markings must only contain silkscreen` otherwise they belong in `FAB`.
+* **FAB** - Fabrication specific objects. Such as fiducials, tooling holes, and mouse bites. If a fabrication object only contains silkscreen (no ECAD) the object should move to `MRK`.
+* **MEC** - Things I consider mechanical. Primarily mounting holes, heat sinks, and standoffs.
+* NOTE - Becuase of similarities between MRK and FAB I had to make the classification criteria more strict
 
 **Modified Part Types**
 * Changed the transistor name from XTR to TRN. To me XTR was too similar to XFRM (transformer) or TXR (transceiver).
@@ -36,7 +37,6 @@ There are many components that could fit into multiple libraries. To avoid confu
 | Test Points       | FAB           | CON, MEC, MRK                 |
 | Fabrication Markings | FAB        | MRK                           |
 | Solder Bridge     | FAB           | CON, MEC                      |
-
 
 **Database Tales**<br>
 Below is a list of all the libraries stored in this repo, along with a short description of their contents.

@@ -323,18 +323,6 @@
 		(symbol "SYM-TRN-0001_0_1"
 			(polyline
 				(pts
-					(xy 0.254 1.905) (xy 0.254 -1.905)
-				)
-				(stroke
-					(width 0.254)
-					(type default)
-				)
-				(fill
-					(type none)
-				)
-			)
-			(polyline
-				(pts
 					(xy 0.254 0) (xy -2.54 0)
 				)
 				(stroke
@@ -347,7 +335,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.762 2.286) (xy 0.762 -2.286)
+					(xy 0.254 -1.905) (xy 0.254 1.905)
 				)
 				(stroke
 					(width 0.254)
@@ -359,7 +347,7 @@
 			)
 			(polyline
 				(pts
-					(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
+					(xy 0.762 1.778) (xy 3.302 1.778) (xy 3.302 -1.778) (xy 0.762 -1.778)
 				)
 				(stroke
 					(width 0)
@@ -371,7 +359,19 @@
 			)
 			(polyline
 				(pts
-					(xy 2.2942 -0.0053) (xy 1.2782 -0.3863) (xy 1.2782 0.3757) (xy 2.2942 -0.0053)
+					(xy 0.762 -2.286) (xy 0.762 2.286)
+				)
+				(stroke
+					(width 0.254)
+					(type default)
+				)
+				(fill
+					(type none)
+				)
+			)
+			(polyline
+				(pts
+					(xy 2.2942 0.0053) (xy 1.2782 0.3863) (xy 1.2782 -0.3757) (xy 2.2942 0.0053)
 				)
 				(stroke
 					(width 0)
@@ -383,7 +383,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.54 2.54) (xy 2.54 1.778)
+					(xy 2.54 2.54) (xy 2.54 0) (xy 0.762 0)
 				)
 				(stroke
 					(width 0)
@@ -417,7 +417,7 @@
 			)
 			(polyline
 				(pts
-					(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
+					(xy 2.54 -2.54) (xy 2.54 -1.778)
 				)
 				(stroke
 					(width 0)
@@ -429,7 +429,7 @@
 			)
 			(polyline
 				(pts
-					(xy 3.3251 -0.1714) (xy 3.7061 0.4636) (xy 2.9441 0.4636) (xy 3.3251 -0.1714)
+					(xy 3.3251 0.1714) (xy 3.7061 -0.4636) (xy 2.9441 -0.4636) (xy 3.3251 0.1714)
 				)
 				(stroke
 					(width 0)
@@ -441,7 +441,7 @@
 			)
 			(polyline
 				(pts
-					(xy 3.8633 -0.3717) (xy 3.7363 -0.2447) (xy 2.9743 -0.2447) (xy 2.8473 -0.1177)
+					(xy 3.8633 0.3717) (xy 3.7363 0.2447) (xy 2.9743 0.2447) (xy 2.8473 0.1177)
 				)
 				(stroke
 					(width 0)
@@ -474,14 +474,14 @@
 			(pin passive line
 				(at 2.54 5.08 270)
 				(length 2.54)
-				(name "D"
+				(name "S"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "3"
+				(number "2"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -492,14 +492,14 @@
 			(pin passive line
 				(at 2.54 -5.08 90)
 				(length 2.54)
-				(name "S"
+				(name "D"
 					(effects
 						(font
 							(size 1.27 1.27)
 						)
 					)
 				)
-				(number "2"
+				(number "3"
 					(effects
 						(font
 							(size 1.27 1.27)
