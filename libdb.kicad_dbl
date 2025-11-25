@@ -13,19 +13,19 @@
         "connection_string": "DSN=KiCad_libdb;"
     },
     "libraries": [
-        {
-            "name": "Analog",
-            "table": "Analog",
-            "key": "IPN",
-            "symbols": "Symbols",
-            "footprints": "Footprints",
-            "fields": [
-		{
+				{
+					"name": "Analog",
+					"table": "Analog",
+					"key": "IPN",
+					"symbols": "Symbols",
+					"footprints": "Footprints",
+					"fields": [
+				{
                     "column": "IPN",
                     "name": "IPN",
                     "visible_on_add": false,
                     "visible_in_chooser": false,
-			"show_name": false
+					"show_name": false
                     },
 				{
                     "column": "Value",
@@ -70,6 +70,20 @@
                     "show_name": false
 				},
 				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
                     "column": "Comment",
                     "name": "Comment",
                     "visible_on_add": false,
@@ -80,20 +94,20 @@
             "properties": {
                 "description": "Description"
             }
-        },
-        {
-            "name": "Capacitor",
-            "table": "Capacitor",
-            "key": "IPN",
-            "symbols": "Symbols",
-            "footprints": "Footprints",
-            "fields": [
-		{
+				},
+				{
+					"name": "Capacitor",
+					"table": "Capacitor",
+					"key": "IPN",
+					"symbols": "Symbols",
+					"footprints": "Footprints",
+					"fields": [
+				{
                     "column": "IPN",
                     "name": "IPN",
                     "visible_on_add": false,
                     "visible_in_chooser": false,
-			"show_name": false
+					"show_name": false
                     },
 				{
                     "column": "Value",
@@ -140,6 +154,20 @@
 				{
                     "column": "MPN_2",
                     "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
                     "visible_on_add": false,
                     "visible_in_chooser": true,
                     "show_name": false
@@ -204,6 +232,20 @@
                     "visible_on_add": false,
                     "visible_in_chooser": true,
                     "show_name": false
+				},				
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
 				},
 				{
                     "column": "Comment",
@@ -229,7 +271,7 @@
                     "name": "IPN",
                     "visible_on_add": false,
                     "visible_in_chooser": false,
-			"show_name": false
+					"show_name": false
                     },
 				{
                     "column": "Value",
@@ -269,6 +311,20 @@
 				{
                     "column": "MPN_2",
                     "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},				
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
                     "visible_on_add": false,
                     "visible_in_chooser": true,
                     "show_name": false
