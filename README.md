@@ -9,16 +9,16 @@ I often forget what file extensions are related to which data type. Here's an ov
 # Naming Conventions
 - **Passive** provide a special use case for the `CCC-NNN-VVVV` scheme
 - We will encode the value in `VVVV` variation, see [examples](https://github.com/git-plm/parts/blob/main/partnumbers.md#examples)
-    - Passives that share `CCC-NNN` should be **identical in every metric except value**
+    - Passives that share `CCC` should be **identical in every metric except value**
+    - For other type specific naming schemes continue reading...
 
 ## Libraries and Naming
 The part codes used for this project are very similar, though slightly modified from this [part numbering template](https://github.com/git-plm/parts/blob/main/partnumbers.md) Key changes are as follows..
 
 **New Part Types**
-* **MRK** - Added a "markings" library for graphics and logos. `Markings must only contain silkscreen` otherwise they belong in `FAB`.
-* **FAB** - Fabrication specific objects. Such as fiducials, tooling holes, and mouse bites. If a fabrication object only contains silkscreen (no ECAD) the object should move to `MRK`.
-* **MEC** - Things I consider mechanical. Primarily mounting holes, heat sinks, and standoffs.
-* NOTE - Becuase of similarities between MRK and FAB I had to make the classification criteria more strict
+* **MRK** - Added a "markings" library for graphics and logos. These are generally "symbols" that won't appear on the BOM.
+* **FAB** - Fabrication specific objects. Such as fiducials, tooling holes, and mouse bites. There are a few markings which are specifically used by fabrication. For example JLCJLCJLC. These belong in the FAB library.
+* **MEC** - Things I consider mechanical. Primarily mounting holes, heat sinks, and standoffs. 
 
 **Modified Part Types**
 * Changed the transistor name from XTR to TRN. To me XTR was too similar to XFRM (transformer) or TXR (transceiver).
@@ -38,7 +38,8 @@ There are many components that could fit into multiple libraries. To avoid confu
 | Fabrication Markings | FAB        | MRK                           |
 | Solder Bridge     | FAB           | CON, MEC                      |
 
-**Database Tales**<br>
+
+**Database Details**<br>
 Below is a list of all the libraries stored in this repo, along with a short description of their contents.
 * **Database Name** - The name of the SQLite table
 * **Database Code** - Used for the file structure. You will interact with these names in KiCad.
@@ -68,7 +69,7 @@ Below is a list of all the libraries stored in this repo, along with a short des
 | SWI  | Switch                     | All Types of Mechanical Switch           |
 | TRN  | Transistor                 | BJT, FET, IGBT                           |
 
-
+# Type Specific Naming
 ## Resistors / RES
 4-digit encoding. For example 1234 is 1.23*10^4 (12.3kΩ). If you are unable to encode the exact value it is still recommended that you encode the closest possible value.
 
@@ -106,17 +107,27 @@ Example of the encoding scheme. Note the the `NNN` digits will increment on ANY 
 - 100nH 2.90x2.90 4A: **IND-001-1002**
 
 ## Connectors / CNT
-Last four digits will be encoded as follows. The **first digit** signifies the pin gender.
+The **first digit** signifies the gender (and possibly extend this to type in the future) of connector.
 - 0 - Female
 - 1 - Male
-- 2 - Genderless
+- 2 - Genderless (ex USB)
 - 3 - Hermaphrodite
 - 4 - PCB Footprint 
  <br>*from a layout perspective the connector is just a footprint w/o a part, some programming headers for example*
-- 5... 9 - Others
 
+The **second digit** signifies the direction of the connection.
+- 0 - Horizontal
+- 1 - Vertical
 
-## Symbols & Footprints
+The **third and fourth digits** represent the pin count, including any mechanical connections.
+- 99 - Number of "connections" made to the PCB.
+
+Example of the encoding scheme.
+- Vertical Male DB9: **CNT-000-1109**
+- Vertical Male DB12: **CNT-000-1112**
+- Jellybean 2pin header: **CNT-001-1102**
+
+# Symbols & Footprints
 Since the same symbol/footprint might be reused by several IPNs, the symbol/footprint **name should not contain any IPN data**. Instead we will use **generic sequential numbering**. For example the first diode symbol will be `SYM-DIO-0000`, the next would be **SYM-DIO-0001**. Details about the symbol can be stored in the meta data of the symbol.
 
 Similarly footprint names will be generated sequentially, starting with `FTP-DIO-0000`.
