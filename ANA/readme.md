@@ -10,7 +10,8 @@ Opamps, Comparators, ADC, DAC, Digital Potentiometer
 # Taxonomy
 All components share the same base format `CCC-NNN-VVVV`. To help organize this component category, analog device have used the `NNN` digits to classify the device type as described below.
 
-- `1N`x - Opamp
+- `0`xx - <un>Unassigned</un> 
+- `1`xx - Opamp
     - `10`x - General Purpose
     - `11`x - Precision, Low Noise
     - `12`x - High Speed > 20MHz GBWP

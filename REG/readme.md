@@ -17,19 +17,19 @@ As new devices are added I will see what classifications are required.
 - `Nxx` - Power Domain
     - `0`xx - AC/DC
     - `1`xx - DC/DC
-    - `2`xx - DC/AC
+    - `2`xx - DC/AC9
     - `3`xx to `8`xx - <u>Unassigned</u>
     - `9`xx - Other / Mixed
 
 - `xNN` - Topology
-    - x`10` to x`19` - LDO
+    - x`1`X - LDO
         - x`10` - References
         - x`11` - Low Current <0.25A
         - x`12` - High Current >=0.25A
         - x`13` to `18` - <u>Unassigned</u>
         - x`19` - OTHER
 
-    - x`20` to x`29` - Switching Controller
+    - x`2`X - Switching Controller
         - x`21` - Boost
         - x`22` - Buck
         - x`23` - Buck-Boost
@@ -40,11 +40,17 @@ As new devices are added I will see what classifications are required.
         - x`27` to `28` - <u>Unassigned</u>
         - x`29` - OTHER
 
-    - x`30` to x`39` - Voltage Regulators
+    - x`3`X - Voltage Regulators
         - x`31` - Boost
         - x`32` - Buck
         - x`33` - Buck-Boost
         - x`37` to `38` - <u>Unassigned</u>
         - x`39` - OTHER
+    
+    - x`9`x - Mixed Technologies
+        - x`91` - Solar Energy Harvester
+        - x`92` to `98` - <u>Unassigned</u>
+        - x`99` - OTHER
 
-    - x`40` to x`99` - <u>Unassigned</u>
+    
+- <u>Unassigned</u>
