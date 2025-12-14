@@ -55,6 +55,18 @@
 			)
 		)
 	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(fp_rect
+		(start -4.5 -1)
+		(end 4.5 1)
+		(stroke
+			(width 0.15)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "b9bd73b4-663c-46b0-beff-f774e564b554")
+	)
 	(fp_text user "JLCJLCJLCJLC"
 		(at 0 0 0)
 		(unlocked yes)
