@@ -17,7 +17,7 @@
 			)
 		)
 	)
-	(property "Value" ""
+	(property "Value" "Val**"
 		(at 0 -4.572 0)
 		(unlocked yes)
 		(layer "F.Fab")
@@ -56,7 +56,7 @@
 			)
 		)
 	)
-	(attr board_only exclude_from_pos_files exclude_from_bom)
+	(attr exclude_from_pos_files exclude_from_bom)
 	(fp_poly
 		(pts
 			(xy -7.026205 -1.230428) (xy -6.991135 -1.212777) (xy -6.979179 -1.201433) (xy -6.972902 -1.193774)
