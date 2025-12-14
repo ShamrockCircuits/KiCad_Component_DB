@@ -1,0 +1,124 @@
+(footprint "FTP-MRK-0004b"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "17x3mm - Quality check Box")
+	(tags "Quality check Box, QC")
+	(property "Reference" "REF**"
+		(at 0 -1 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "318f01f6-aaea-4425-b727-dd7ca0563648")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "VAL"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "42ace9c9-ddb0-4157-8538-1a79932ad01e")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1c626414-fd97-4c98-b499-19cb3c0aa6a6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bf639518-e0de-44cb-b0e5-7814e2f7cd3e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(fp_line
+		(start -2.75 -1.2)
+		(end -2.75 1.25)
+		(stroke
+			(width 0.6)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "bcb465d9-025d-4d05-ad9e-2f9586e98571")
+	)
+	(fp_line
+		(start -2.675 1.3)
+		(end 0.775 1.3)
+		(stroke
+			(width 0.3)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "69f909f3-2519-436b-8db2-cf5bc7bdc468")
+	)
+	(fp_line
+		(start 0.775 -1.35)
+		(end -2.775 -1.35)
+		(stroke
+			(width 0.3)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "1cc43c5a-c8aa-4847-976d-85b9f39da40f")
+	)
+	(fp_line
+		(start 1.05 1.4)
+		(end 1.05 -1.4)
+		(stroke
+			(width 0.4)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "10abb730-c6ec-4e50-9897-5a60aa79aec3")
+	)
+	(fp_rect
+		(start -3 -1.5)
+		(end 5.5 1.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "b0629f54-4cca-455c-8197-46654771c497")
+	)
+	(fp_text user "QC"
+		(at -0.8 0 0)
+		(unlocked yes)
+		(layer "F.SilkS" knockout)
+		(uuid "64f824b6-c140-4f87-ad26-078f6cb6f2ce")
+		(effects
+			(font
+				(size 1.7 1.7)
+				(thickness 0.3)
+				(bold yes)
+			)
+		)
+	)
+	(embedded_fonts no)
+)
