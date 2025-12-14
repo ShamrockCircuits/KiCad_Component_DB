@@ -11,8 +11,9 @@
 		(uuid "1795d47a-cf99-4c8b-b16a-bae36830fafc")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.6 0.6)
+				(thickness 0.1)
+				(bold yes)
 			)
 		)
 	)
@@ -480,8 +481,9 @@
 		(uuid "74511402-1527-4819-95bd-afcb135cdee3")
 		(effects
 			(font
-				(size 0.75 0.75)
-				(thickness 0.12)
+				(size 0.6 0.6)
+				(thickness 0.1)
+				(bold yes)
 			)
 			(justify bottom)
 		)
@@ -492,8 +494,9 @@
 		(uuid "0779f916-b630-4c86-94d7-09d2af4ade11")
 		(effects
 			(font
-				(size 1 1)
-				(thickness 0.15)
+				(size 0.6 0.6)
+				(thickness 0.1)
+				(bold yes)
 			)
 		)
 	)
