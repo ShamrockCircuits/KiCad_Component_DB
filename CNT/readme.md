@@ -5,7 +5,7 @@ Check that the component type does not already exist in a different library befo
 Consider making an entirely new library before adding a new component type below.
 
 __Supported Component Types__
-Connectors
+Connectors, PTH footprints lacking physical connectors (ie. intended to by flywired)
 
 __Do NOT Place These Parts Here__
 Test Points -> See FAB
@@ -21,6 +21,7 @@ mechanical connectors have used the `NNN` digits to classify the mechanical fami
         - `11`x - Socket, Plug
         - `12`x - Header, Pin strip
         - `13`x - Terminal Block (Screw)
+        - `14`x - Flywire (No physical connector, just PTH)
 
     - `2`xx - Generic Wire-to-board
         - `20`x - <u>Unassigned</u>
