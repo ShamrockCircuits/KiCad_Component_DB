@@ -1,0 +1,113 @@
+(footprint "FTP-MRK-0002a"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "12x2mm - Serial Number Box")
+	(tags "Serial Number Box, SN")
+	(property "Reference" "REF**"
+		(at 0 -1 0)
+		(unlocked yes)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "318f01f6-aaea-4425-b727-dd7ca0563648")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "VAL"
+		(at 0 0 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "42ace9c9-ddb0-4157-8538-1a79932ad01e")
+		(effects
+			(font
+				(size 0.6 0.6)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "1c626414-fd97-4c98-b499-19cb3c0aa6a6")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bf639518-e0de-44cb-b0e5-7814e2f7cd3e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr exclude_from_pos_files exclude_from_bom)
+	(fp_line
+		(start -2 -1)
+		(end -2 1)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "e1a3c344-78c6-4ad5-8db1-8f5ec29128b2")
+	)
+	(fp_line
+		(start -2 1)
+		(end 10 1)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "8a72cf38-65ca-46b1-ac05-a37ceede9f83")
+	)
+	(fp_line
+		(start 10 -1)
+		(end -2 -1)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "1f80c605-17ba-4c3a-9bcc-a9f713d8019c")
+	)
+	(fp_line
+		(start 10 1)
+		(end 10 -1)
+		(stroke
+			(width 0.15)
+			(type default)
+		)
+		(layer "F.SilkS")
+		(uuid "10a060ab-fccd-440f-ab8c-5c5344c833e1")
+	)
+	(fp_text user "S/N"
+		(at -0.2 -0.05 0)
+		(unlocked yes)
+		(layer "F.SilkS" knockout)
+		(uuid "d7bd619b-19a5-4e05-ba4c-0c36d2402f76")
+		(effects
+			(font
+				(size 1.2 1.2)
+				(thickness 0.2)
+				(bold yes)
+			)
+		)
+	)
+	(embedded_fonts no)
+)
