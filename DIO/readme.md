@@ -9,6 +9,7 @@ TVS, Schottky, Zener, Standard, LED
 
 # Taxonomy
 
+
 - `N`xx - Device Type
 
     - `0`xx - Standard Silicon Diode
@@ -40,14 +41,14 @@ TVS, Schottky, Zener, Standard, LED
     - `1`xx - Schottky Diode
     - `2`xx - Zener Diode
 
-    - `3`xx - TVS Diode
+    - `3`xx - TVS Diode321
         - x`N`x - Reverse Standoff Voltage (VWM)
         - `30`x - 0 ≤ VWM<sub>typ</sub> ≤ 2.5V
         - `31`x - 2.5 < VWM<sub>typ</sub> ≤ 4.5V
         - `32`x - 4.5 < VWM<sub>typ</sub> ≤ 8.5V
         - `34`x - 8.5 < VWM<sub>typ</sub> ≤ 12V
-        - `35`x - <un>Unassigned</un>
-        - `36`x - <un>Unassigned</un>
+        - `35`x - 12 <  VWM<sub>typ</sub> ≤ 20V
+        - `36`x - 20 <  VWM<sub>typ</sub> ≤ 32V
         - `37`x - <un>Unassigned</un>
         - `38`x - <un>Unassigned</un>
         - `39`x - Other
