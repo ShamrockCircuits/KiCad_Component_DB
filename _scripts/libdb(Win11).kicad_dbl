@@ -1,0 +1,2132 @@
+{
+    "meta": {
+        "version": 1.0
+    },
+    "name": "KiCad Library Database",
+    "description": "A KiCad library database with individual tables for each component type",
+    "source": {
+        "type": "odbc",
+        "dsn": "",
+        "username": "",
+        "password": "",
+        "timeout_seconds": 2,
+        "connection_string": "DSN=KiCad_libdb;"
+    },
+    "libraries": [
+				{
+					"name": "Analog",
+					"table": "ANA",
+					"key": "IPN",
+					"symbols": "Symbols",
+					"footprints": "Footprints",
+					"fields": [
+				{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+					"show_name": false
+                    },
+				{
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_1",
+                    "name": "LCSC_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_2",
+                    "name": "LCSC_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_3",
+                    "name": "LCSC_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+            ],
+            "properties": {
+                "description": "Description"
+            }
+				},
+				{
+					"name": "Capacitor",
+					"table": "CAP",
+					"key": "IPN",
+					"symbols": "Symbols",
+					"footprints": "Footprints",
+					"fields": [
+				{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+					"show_name": false
+                    },
+				{
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                },
+                {
+                    "column": "Voltage Rating [V]",
+                    "name": "Voltage Rating",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_1",
+                    "name": "LCSC_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_2",
+                    "name": "LCSC_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_3",
+                    "name": "LCSC_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+            ],
+            "properties": {
+                "description": "Description"
+            }
+        },
+        {
+            "name": "Connector",
+            "table": "CNT",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
+				{
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                },
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_1",
+                    "name": "LCSC_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_2",
+                    "name": "LCSC_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_3",
+                    "name": "LCSC_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+            ],
+            "properties": {
+                "description": "Description"
+            }
+        },
+        {
+            "name": "Diode",
+            "table": "DIO",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+					"show_name": false
+                    },
+				{
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_1",
+                    "name": "LCSC_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_2",
+                    "name": "LCSC_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_3",
+                    "name": "LCSC_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+            ],
+            "properties": {
+                "description": "Description"
+            }
+        },
+        {
+            "name": "Fabrication",
+            "table": "FAB",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
+				{
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_1",
+                    "name": "LCSC_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_2",
+                    "name": "LCSC_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_3",
+                    "name": "LCSC_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+            ],
+            "properties": {
+                "description": "Description"
+            }
+        },
+        {
+            "name": "IntegratedCircuit",
+            "table": "ICS",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
+				{
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_1",
+                    "name": "LCSC_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_2",
+                    "name": "LCSC_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_3",
+                    "name": "LCSC_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+            ],
+            "properties": {
+                "description": "Description"
+            }
+        },
+        {
+            "name": "Magnetics",
+            "table": "IND",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_1",
+                    "name": "LCSC_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_2",
+                    "name": "LCSC_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_3",
+                    "name": "LCSC_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Marking",
+            "table": "MRK",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Mechanical",
+            "table": "MEC",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_1",
+                    "name": "LCSC_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_2",
+                    "name": "LCSC_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_3",
+                    "name": "LCSC_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Microcontroller",
+            "table": "MCU",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_1",
+                    "name": "LCSC_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_2",
+                    "name": "LCSC_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_3",
+                    "name": "LCSC_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Optoelectronics",
+            "table": "OPT",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_1",
+                    "name": "LCSC_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_2",
+                    "name": "LCSC_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_3",
+                    "name": "LCSC_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Oscillator",
+            "table": "OSC",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_1",
+                    "name": "LCSC_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_2",
+                    "name": "LCSC_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_3",
+                    "name": "LCSC_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Protection",
+            "table": "CPD",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_1",
+                    "name": "LCSC_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_2",
+                    "name": "LCSC_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_3",
+                    "name": "LCSC_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Radio",
+            "table": "RFM",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_1",
+                    "name": "LCSC_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_2",
+                    "name": "LCSC_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_3",
+                    "name": "LCSC_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Regulator",
+            "table": "REG",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_1",
+                    "name": "LCSC_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_2",
+                    "name": "LCSC_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_3",
+                    "name": "LCSC_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Relay",
+            "table": "RLY",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_1",
+                    "name": "LCSC_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_2",
+                    "name": "LCSC_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_3",
+                    "name": "LCSC_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Resistor",
+            "table": "RES",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_1",
+                    "name": "LCSC_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_2",
+                    "name": "LCSC_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_3",
+                    "name": "LCSC_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+            }
+        },
+        {
+            "name": "Sensor",
+            "table": "SEN",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_1",
+                    "name": "LCSC_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_2",
+                    "name": "LCSC_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_3",
+                    "name": "LCSC_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "SystemOnChip",
+            "table": "SOC",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_1",
+                    "name": "LCSC_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_2",
+                    "name": "LCSC_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_3",
+                    "name": "LCSC_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Transistor",
+            "table": "TRN",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_1",
+                    "name": "LCSC_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_2",
+                    "name": "LCSC_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_3",
+                    "name": "LCSC_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        },
+        {
+            "name": "Switch",
+            "table": "SWI",
+            "key": "IPN",
+            "symbols": "Symbols",
+            "footprints": "Footprints",
+            "fields": [
+		{
+                    "column": "IPN",
+                    "name": "IPN",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+			"show_name": false
+                    },
+			    {
+                    "column": "Value",
+                    "name": "Value",
+                    "visible_on_add": true,
+                    "visible_in_chooser": true,
+					"show_name": false
+                    },
+				{
+                    "column": "Case/Package Size",
+                    "name": "Package",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_1",
+                    "name": "MFN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_1",
+                    "name": "MPN_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_1",
+                    "name": "LCSC_1",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_2",
+                    "name": "MFN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_2",
+                    "name": "MPN_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_2",
+                    "name": "LCSC_2",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "MFN_3",
+                    "name": "MFN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "MPN_3",
+                    "name": "MPN_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				},
+				{
+                    "column": "LCSC_3",
+                    "name": "LCSC_3",
+                    "visible_on_add": false,
+                    "visible_in_chooser": false,
+                    "show_name": false
+				},
+				{
+                    "column": "Comment",
+                    "name": "Comment",
+                    "visible_on_add": false,
+                    "visible_in_chooser": true,
+                    "show_name": false
+				}
+				
+            ],
+            "properties": {
+                "description": "Description"
+               }
+        }
+    ]
+}
