@@ -71,41 +71,9 @@ Below is a list of all the libraries stored in this repo, along with a short des
 | TRN  | Transistor                 | BJT, FET, IGBT                           |
 
 # Type Specific Naming
-## Resistors / RES
-4-digit encoding. For example 1234 is 1.23*10^4 (12.3kΩ). If you are unable to encode the exact value it is still recommended that you encode the closest possible value.
-
-- 1K   0805 1%: **RES-002-1003**
-- 3.3K 0805 1%: **RES-002-3303**
-- 2.2K 0805 5%: **RES-003-2203** (different tolerance)
-- 1  0603 0.1%: **RES-004-1000**
-- 10 0603 0.1%  **RES-004-1001**
-
-There has been no agreement yet how to encode values below 0.01Ω. I will either (1) **ignore the version digits**, or (2) change the encoding scheme for mΩ resistors. Likely I will follow option (1).
-
-## Capacitors / CAP
-Value uses 3-digit encoding. Where the **third digit** is the number of **zeros in pF**. For example, 103 is 10nF. The remaining digit is used to encode the dielectric type. Common combinations (that I typically use) have been encoded roughly  in accordance with their popularity.  
- - 0 - None
- - 1 - X5R
- - 2 - X7R
- - 3 - C0G/NP0
- - *4 to 9 - spare*
-
-Example of the encoding scheme.
-
-- 100nF 0603 X5R: **CAP-000-1041**
-- 100nF 0603 X7R: **CAP-000-1042**
-- 220nF 0805 X5R: **CAP-001-2241**
-
-If you are unable to encode the capacitor value in the 3-digits assign `VVVV` as `000V`. Where the last `V` still signifies the dielectric. *NOTE - I haven't had to do this yet, it might change when I encounter my first issue*
-
-## Inductors / IND
-The lowest value I intend to capture is about 1nH. So I'll make `1000` equal to 1nH. This gives me the range from 0.01nH to 9.99H (jeez that's big).
-
-Example of the encoding scheme. Note the the `NNN` digits will increment on ANY spec change other than inductance.
-
-- 100nH 3.00x3.00 2A: **IND-000-1002**
-- 120uH 3.00x3.00 2A: **IND-000-1205**
-- 100nH 2.90x2.90 4A: **IND-001-1002**
+### Resistors  -> [\RES\readme.md](RES/readme.md)
+### Capacitors -> [\CAP\readme.md](CAP/readme.md)
+### Inductors -> [\IND\readme.md](IND/readme.md)
 
 ## Connectors / CNT
 The **first digit** signifies the gender (and possibly extend this to type in the future) of connector.
@@ -181,56 +149,56 @@ The new environment variable tells KiCad where our database is stored. All parts
 Open **sym-lib-table** in a text editor and paste the following at the bottom of the file. 
 
 <pre>
-  (lib (name "libdb")(type "Database")(uri "${KICAD_USER_CUSTOM_LIB}/libdb.kicad_dbl")(options "")(descr "Custom Component Database"))
-  (lib (name "0-ANA")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/ANA.kicad_sym")(options "")(descr "Op-amps, Comparators, A/D, D/A"))
-  (lib (name "0-CAP")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/CAP.kicad_sym")(options "")(descr "Capacitors"))
-  (lib (name "0-CNT")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/CNT.kicad_sym")(options "")(descr "Connectors"))
-  (lib (name "0-CPD")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/CPD.kicad_sym")(options "")(descr "Circuit Protection Devices (MOV, Varistor, Fuse, ect)"))
-  (lib (name "0-DIO")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/DIO.kicad_sym")(options "")(descr "Diodes (Zener, TVS, LED, Schottky, Standard)"))
-  (lib (name "0-FAB")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/FAB.kicad_sym")(options "")(descr "Fabrication specific elements (Fiducial, Tooling Holes, Mouse Bites)"))
-  (lib (name "0-ICS")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/ICS.kicad_sym")(options "")(descr "General Integrated Circuits"))
-  (lib (name "0-IND")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/IND.kicad_sym")(options "")(descr "Inductors, Transformers, Chokes, Magnetics"))
-  (lib (name "0-MCU")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/MCU.kicad_sym")(options "")(descr "Microcontrollers, Modules, etc."))
-  (lib (name "0-MEC")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/MEC.kicad_sym")(options "")(descr "Mechanical components (Mounting holes, etc)"))
-  (lib (name "0-MRK")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/MRK.kicad_sym")(options "")(descr "Symbols, Logos and Graphics... ie Non-BOM"))
-  (lib (name "0-OPT")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/OPT.kicad_sym")(options "")(descr "Optocouplers, phototransistor, SSR etc."))
-  (lib (name "0-OSC")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/OSC.kicad_sym")(options "")(descr "Oscillators, Crystals"))
-  (lib (name "0-REG")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/REG.kicad_sym")(options "")(descr "Regulators (LDO, Buck, Boost, Flyback, ect)"))
-  (lib (name "0-RES")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/RES.kicad_sym")(options "")(descr "Resistors"))
-  (lib (name "0-RFM")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/RFM.kicad_sym")(options "")(descr "RF Modules, ICs, and Related components"))
-  (lib (name "0-RLY")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/RLY.kicad_sym")(options "")(descr "Relays, SSR, etc"))
-  (lib (name "0-SEN")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/SEN.kicad_sym")(options "")(descr "Environmental Sensors"))
-  (lib (name "0-SOC")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/SOC.kicad_sym")(options "")(descr "SOC, SOM, SBC, MPU etc."))
-  (lib (name "0-SWI")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/SWI.kicad_sym")(options "")(descr "All Types of Mechanical Switch"))
-  (lib (name "0-TRN")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/TRN.kicad_sym")(options "")(descr "BJT, FET, IGBT"))
+  (lib (name "00-JF")(type "Database")(uri "${KICAD_USER_CUSTOM_LIB}/_scripts/libdb.kicad_dbl")(options "")(descr "Custom Component Database"))
+  (lib (name "01-ANA")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/ANA.kicad_sym")(options "")(descr "Op-amps, Comparators, A/D, D/A"))
+  (lib (name "01-CAP")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/CAP.kicad_sym")(options "")(descr "Capacitors"))
+  (lib (name "01-CNT")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/CNT.kicad_sym")(options "")(descr "Connectors"))
+  (lib (name "01-CPD")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/CPD.kicad_sym")(options "")(descr "Circuit Protection Devices (MOV, Varistor, Fuse, ect)"))
+  (lib (name "01-DIO")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/DIO.kicad_sym")(options "")(descr "Diodes (Zener, TVS, LED, Schottky, Standard)"))
+  (lib (name "01-FAB")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/FAB.kicad_sym")(options "")(descr "Fabrication specific elements (Fiducial, Tooling Holes, Mouse Bites)"))
+  (lib (name "01-ICS")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/ICS.kicad_sym")(options "")(descr "General Integrated Circuits"))
+  (lib (name "01-IND")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/IND.kicad_sym")(options "")(descr "Inductors, Transformers, Chokes, Magnetics"))
+  (lib (name "01-MCU")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/MCU.kicad_sym")(options "")(descr "Microcontrollers, Modules, etc."))
+  (lib (name "01-MEC")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/MEC.kicad_sym")(options "")(descr "Mechanical components (Mounting holes, etc)"))
+  (lib (name "01-MRK")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/MRK.kicad_sym")(options "")(descr "Symbols, Logos and Graphics... ie Non-BOM"))
+  (lib (name "01-OPT")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/OPT.kicad_sym")(options "")(descr "Optocouplers, phototransistor, SSR etc."))
+  (lib (name "01-OSC")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/OSC.kicad_sym")(options "")(descr "Oscillators, Crystals"))
+  (lib (name "01-REG")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/REG.kicad_sym")(options "")(descr "Regulators (LDO, Buck, Boost, Flyback, ect)"))
+  (lib (name "01-RES")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/RES.kicad_sym")(options "")(descr "Resistors"))
+  (lib (name "01-RFM")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/RFM.kicad_sym")(options "")(descr "RF Modules, ICs, and Related components"))
+  (lib (name "01-RLY")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/RLY.kicad_sym")(options "")(descr "Relays, SSR, etc"))
+  (lib (name "01-SEN")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/SEN.kicad_sym")(options "")(descr "Environmental Sensors"))
+  (lib (name "01-SOC")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/SOC.kicad_sym")(options "")(descr "SOC, SOM, SBC, MPU etc."))
+  (lib (name "01-SWI")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/SWI.kicad_sym")(options "")(descr "All Types of Mechanical Switch"))
+  (lib (name "01-TRN")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/TRN.kicad_sym")(options "")(descr "BJT, FET, IGBT"))
 </pre>
 
 ### Modify "fp-lib-table" - Add Symbols
 Open **fp-lib-table** in a text editor and paste the following at the bottom of the file.
 
 <pre>
-  (lib (name "1-PACKAGES")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/PACKAGES.pretty")(options "")(descr "Generic packages used across multiple libraries"))
-  (lib (name "0-ANA")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/ANA.pretty")(options "")(descr "Op-amps, Comparators, A/D, D/A"))
-  (lib (name "0-CAP")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/CAP.pretty")(options "")(descr "Capacitors"))
-  (lib (name "0-CNT")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/CNT.pretty")(options "")(descr "Connectors"))
-  (lib (name "0-CPD")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/CPD.pretty")(options "")(descr "Circuit Protection Devices (MOV, Varistor, Fuse, ect)"))
-  (lib (name "0-DIO")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/DIO.pretty")(options "")(descr "Diodes (Zener, TVS, LED, Schottky, Standard)"))
-  (lib (name "0-FAB")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/FAB.pretty")(options "")(descr "Fabrication specific elements (Fiducial, Tooling Holes, Mouse Bites)"))
-  (lib (name "0-ICS")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/ICS.pretty")(options "")(descr "General Integrated Circuits"))
-  (lib (name "0-IND")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/IND.pretty")(options "")(descr "Inductors, Transformers, Chokes, Magnetics"))
-  (lib (name "0-MCU")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/MCU.pretty")(options "")(descr "Microcontrollers, Modules, etc."))
-  (lib (name "0-MEC")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/MEC.pretty")(options "")(descr "Mechanical components (Mounting holes, etc)"))
-  (lib (name "0-MRK")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/MRK.pretty")(options "")(descr "Symbols, Logos and Graphics... ie Non-BOM"))
-  (lib (name "0-OPT")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/OPT.pretty")(options "")(descr "Optocouplers, phototransistor, SSR etc."))
-  (lib (name "0-OSC")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/OSC.pretty")(options "")(descr "Oscillators, Crystals"))
-  (lib (name "0-REG")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/REG.pretty")(options "")(descr "Regulators (LDO, Buck, Boost, Flyback, ect)"))
-  (lib (name "0-RES")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/RES.pretty")(options "")(descr "Resistors"))
-  (lib (name "0-RFM")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/RFM.pretty")(options "")(descr "RF Modules, ICs, and Related components"))
-  (lib (name "0-RLY")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/RLY.pretty")(options "")(descr "Relays, SSR, etc"))
-  (lib (name "0-SEN")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/SEN.pretty")(options "")(descr "Environmental Sensors"))
-  (lib (name "0-SOC")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/SOC.pretty")(options "")(descr "SOC, SOM, SBC, MPU etc."))
-  (lib (name "0-SWI")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/SWI.pretty")(options "")(descr "All Types of Mechanical Switch"))
-  (lib (name "0-TRN")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/TRN.pretty")(options "")(descr "BJT, FET, IGBT"))
+  (lib (name "11-PACKAGES")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/PACKAGES.pretty")(options "")(descr "Generic packages used across multiple libraries"))
+  (lib (name "01-ANA")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/ANA.pretty")(options "")(descr "Op-amps, Comparators, A/D, D/A"))
+  (lib (name "01-CAP")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/CAP.pretty")(options "")(descr "Capacitors"))
+  (lib (name "01-CNT")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/CNT.pretty")(options "")(descr "Connectors"))
+  (lib (name "01-CPD")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/CPD.pretty")(options "")(descr "Circuit Protection Devices (MOV, Varistor, Fuse, ect)"))
+  (lib (name "01-DIO")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/DIO.pretty")(options "")(descr "Diodes (Zener, TVS, LED, Schottky, Standard)"))
+  (lib (name "01-FAB")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/FAB.pretty")(options "")(descr "Fabrication specific elements (Fiducial, Tooling Holes, Mouse Bites)"))
+  (lib (name "01-ICS")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/ICS.pretty")(options "")(descr "General Integrated Circuits"))
+  (lib (name "01-IND")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/IND.pretty")(options "")(descr "Inductors, Transformers, Chokes, Magnetics"))
+  (lib (name "01-MCU")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/MCU.pretty")(options "")(descr "Microcontrollers, Modules, etc."))
+  (lib (name "01-MEC")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/MEC.pretty")(options "")(descr "Mechanical components (Mounting holes, etc)"))
+  (lib (name "01-MRK")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/MRK.pretty")(options "")(descr "Symbols, Logos and Graphics... ie Non-BOM"))
+  (lib (name "01-OPT")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/OPT.pretty")(options "")(descr "Optocouplers, phototransistor, SSR etc."))
+  (lib (name "01-OSC")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/OSC.pretty")(options "")(descr "Oscillators, Crystals"))
+  (lib (name "01-REG")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/REG.pretty")(options "")(descr "Regulators (LDO, Buck, Boost, Flyback, ect)"))
+  (lib (name "01-RES")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/RES.pretty")(options "")(descr "Resistors"))
+  (lib (name "01-RFM")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/RFM.pretty")(options "")(descr "RF Modules, ICs, and Related components"))
+  (lib (name "01-RLY")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/RLY.pretty")(options "")(descr "Relays, SSR, etc"))
+  (lib (name "01-SEN")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/SEN.pretty")(options "")(descr "Environmental Sensors"))
+  (lib (name "01-SOC")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/SOC.pretty")(options "")(descr "SOC, SOM, SBC, MPU etc."))
+  (lib (name "01-SWI")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/SWI.pretty")(options "")(descr "All Types of Mechanical Switch"))
+  (lib (name "01-TRN")(type "KiCad")(uri "${KICAD_USER_CUSTOM_LIB}/TRN.pretty")(options "")(descr "BJT, FET, IGBT"))
 </pre>
 
 ### Check It Worked
