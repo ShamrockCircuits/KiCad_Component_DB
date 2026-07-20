@@ -1,2 +1,9 @@
 # Ignore symbol backups
 *.bak
+
+# Script Folder Ignores
+/_scripts/build
+/_scripts/*.spec
+
+# Temp Files
+~$*
