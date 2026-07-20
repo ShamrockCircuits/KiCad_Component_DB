@@ -15,7 +15,7 @@
     "libraries": [
 				{
 					"name": "Analog",
-					"table": "Analog",
+					"table": "ANA",
 					"key": "IPN",
 					"symbols": "Symbols",
 					"footprints": "Footprints",
@@ -118,7 +118,7 @@
 				},
 				{
 					"name": "Capacitor",
-					"table": "Capacitor",
+					"table": "CAP",
 					"key": "IPN",
 					"symbols": "Symbols",
 					"footprints": "Footprints",
@@ -228,7 +228,7 @@
         },
         {
             "name": "Connector",
-            "table": "Connector",
+            "table": "CNT",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
@@ -324,7 +324,7 @@
         },
         {
             "name": "Diode",
-            "table": "Diode",
+            "table": "DIO",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
@@ -427,7 +427,7 @@
         },
         {
             "name": "Fabrication",
-            "table": "Fabrication",
+            "table": "FAB",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
@@ -530,7 +530,7 @@
         },
         {
             "name": "IntegratedCircuit",
-            "table": "IntegratedCircuit",
+            "table": "ICS",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
@@ -633,7 +633,7 @@
         },
         {
             "name": "Magnetics",
-            "table": "Magnetics",
+            "table": "IND",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
@@ -737,7 +737,7 @@
         },
         {
             "name": "Marking",
-            "table": "Marking",
+            "table": "MRK",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
@@ -778,7 +778,7 @@
         },
         {
             "name": "Mechanical",
-            "table": "Mechanical",
+            "table": "MEC",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
@@ -882,7 +882,7 @@
         },
         {
             "name": "Microcontroller",
-            "table": "Microcontroller",
+            "table": "MCU",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
@@ -986,7 +986,7 @@
         },
         {
             "name": "Optoelectronics",
-            "table": "Optoelectronics",
+            "table": "OPT",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
@@ -1090,7 +1090,7 @@
         },
         {
             "name": "Oscillator",
-            "table": "Oscillator",
+            "table": "OSC",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
@@ -1194,7 +1194,7 @@
         },
         {
             "name": "Protection",
-            "table": "Protection",
+            "table": "CPD",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
@@ -1298,7 +1298,7 @@
         },
         {
             "name": "Radio",
-            "table": "Radio",
+            "table": "RFM",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
@@ -1402,7 +1402,7 @@
         },
         {
             "name": "Regulator",
-            "table": "Regulator",
+            "table": "REG",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
@@ -1506,7 +1506,7 @@
         },
         {
             "name": "Relay",
-            "table": "Relay",
+            "table": "RLY",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
@@ -1610,7 +1610,7 @@
         },
         {
             "name": "Resistor",
-            "table": "Resistor",
+            "table": "RES",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
@@ -1713,8 +1713,8 @@
             }
         },
         {
-            "name": "EnvSensor",
-            "table": "Sensor",
+            "name": "Sensor",
+            "table": "SEN",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
@@ -1818,7 +1818,7 @@
         },
         {
             "name": "SystemOnChip",
-            "table": "SystemOnChip",
+            "table": "SOC",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
@@ -1922,7 +1922,7 @@
         },
         {
             "name": "Transistor",
-            "table": "Transistor",
+            "table": "TRN",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
@@ -2026,7 +2026,7 @@
         },
         {
             "name": "Switch",
-            "table": "Switch",
+            "table": "SWI",
             "key": "IPN",
             "symbols": "Symbols",
             "footprints": "Footprints",
